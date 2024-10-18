@@ -1,9 +1,24 @@
 # TPESPECIAL-WEB2
 
-Integrantes: Amuchategui Joaquin, Diniz Mariano
+Integrantes: 
+- Amuchategui Joaquin
+- Diniz Mariano
+
+## Tienda Celulares
+
+Pagina Web de venta de Celulares la cual cuenta con una base de datos con una tabla de Articulos y de Marcas relacionadas entre si.
+
+Diagrama:
+
+![Diagrama Base de Datos](https://github.com/user-attachments/assets/59f0bf4d-06e2-4fea-a2dc-8bcca965ca5e)
 
 
+## Importar DB:
 
-![diagrama](https://github.com/user-attachments/assets/143b0ff5-c70a-44ac-aefe-b46db41526f8)
+Importar el archivo tienda_celulares.sql dentro de PHPMYADMIN para tener la Base de Datos completa
 
-Nuestra base de datos se trata de una tienda de celulares, la cual posee dos tablas, una de articulos en donde se carga la id, nombre, precio y stock de los mismos, y otra de marcas la cual va a poseer la id y el nombre de las diferentes marcas de los celulares.
+## Inicio de Sesion:
+
+Usuario: webadmin
+
+Contraseña: admin
