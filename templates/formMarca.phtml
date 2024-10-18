@@ -1,0 +1,12 @@
+<div class="container-agregar">
+<h1><?= $editar ? 'Editar marca' : 'Agregar marca' ?></h1>
+    <form action="<?= $editar ? BASE_URL . 'editMarca/' . $marca->id_marca : BASE_URL . 'addMarca' ?>" method="POST" class="form-agregar">
+        <label for="nombre">Nombre</label>    
+        <input type="text" name="nombre" value="<?= $editar ? $marca->nombre_marca : '' ?>" required>
+        
+        <label for="imagen">Imagen</label>
+        <input type="text" name="imagen" value="<?= $editar ? $marca->img_marca : '' ?>" required>
+        
+        <button type="submit"><?= $editar ? 'Editar' : 'Agregar' ?></button>
+    </form>
+</div>

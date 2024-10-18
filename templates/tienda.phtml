@@ -1,0 +1,35 @@
+<div class="main-contenedor">
+
+  <h1>Celulares</h1>
+
+  <div class="contenedor-principal">
+
+    <div class="contenedor-celulares">
+
+      <?php foreach ($articulos as $articulo):?>
+    
+        <a href="<?=BASE_URL?>celular/<?=$articulo->id_articulo?>" class="articulo">
+          
+          <div class="contenedor-articulo">
+            
+            <img src="<?=$articulo->img?>" alt="">
+          
+            <div class="card-container">
+
+              <h3><?=$articulo->nombre?></h3>
+              </p> 
+
+            </div>
+
+          </div>
+        </a>
+
+      <?php endforeach?>
+         
+      </div>
+
+  </div>
+
+</div>
+
+<script src="js/mostrar_filtros.js"></script>

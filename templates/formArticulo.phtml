@@ -1,0 +1,32 @@
+<main class="main">
+    <div class="container-agregar">
+        <h1><?= $editar ? 'Editar articulo' : 'Agregar articulo' ?></h1>
+        <form action="<?= $editar ? BASE_URL . 'editArticulo/' . $articulo->id_articulo : BASE_URL . 'addArticulo' ?>" method="POST" class="form-agregar">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" value="<?= $editar ? $articulo->nombre : '' ?>" required>
+            <label for="memoria">Memoria</label>
+            <input type="number" name="memoria" value="<?= $editar ? $articulo->memoria : '' ?>" required>
+            <label for="pantalla">Pantalla</label>
+            <input type="number" name="pantalla" value="<?= $editar ? $articulo->pantalla : '' ?>" required>
+            <label for="camara">Camara</label>
+            <input type="number" name="camara" value="<?= $editar ? $articulo->camara : '' ?>" required>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" value="<?= $editar ? $articulo->precio : '' ?>" required>
+            <label for="stock">Stock</label>
+            <input type="number" name="stock" value="<?= $editar ? $articulo->stock : '' ?>" required>
+            <label for="img">Link imagen</label>
+            <input type="text" name="img" value="<?= $editar ? $articulo->img : '' ?>" required>
+            
+            <div class="lista-marcas">
+                <label for="marcas">Lista de marcas</label>
+                <select name="marca">
+                    <?php foreach ($marcas as $marca): ?>
+                        <option value="<?= $marca->id_marca ?>"><?= $marca->nombre_marca ?></option>
+                    <?php endforeach ?>
+                </select>
+            </div>
+            <button type="submit"><?= $editar ? 'Editar' : 'Enviar' ?></button>
+        </form>
+    </div>
+
+</main>

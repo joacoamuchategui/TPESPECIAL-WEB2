@@ -1,0 +1,34 @@
+<div class="main-contenedor">
+
+  <h1>MARCAS</h1>
+
+  <div class="contenedor-principal">
+
+
+    <div class="contenedor-celulares">
+
+      <?php foreach ($marcas as $marca):?>
+    
+        <a href="marcas" class="articulo">
+          
+          <div class="contenedor-articulo">
+            
+            <img src="<?=$marca->img_marca?>" alt="">
+          
+            <div class="card-container">
+
+              <h3><?=$marca->nombre_marca?></h3>
+              </p> 
+
+            </div>
+
+          </div>
+        </a>
+
+      <?php endforeach?>
+         
+      </div>
+
+  </div>
+
+</div>
